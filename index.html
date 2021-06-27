@@ -15,17 +15,18 @@
 </head>
 <body>
 
-    <header>
-        <div class="heaer-container__logo"></div>
-        <h1  class="heaer-container__title">Geometric Figures</h1>
+    <header class="header-container">
+        <div class="header-container__logo"></div>
+        <h1  class="header-container__title">Geometric Figures</h1>
     </header>
 
     <div class="calculate-container">
 
         <section class="calculate-container__squares">
-            <div class="calculate-container__squares--img"></div>
-            <p id="displaySquares"></p>
-            <p class="calculate-container__squares--p">Calculate the area and perimeter of a square.</p>
+            <div class="calculate-container__squares--img">
+                <p id="displaySquares"></p>
+            </div>
+            <p class="calculate-container__squares--p p">Calculate the area and perimeter of a square.</p>
             <input id="inputSquares" class="input" type="number" placeholder="Cuanto mide cada lado de tu cuadrado?">
             <div class="calculate-container__squares--buttons">
                 <button class="button" id="bCAC" type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
@@ -36,9 +37,9 @@
         <section class="calculate-container__triangles">
             <p id="displayTriangle"></p>
             <div class="calculate-container__triangles--img"></div>
-            <p class="calculate-container__triangles--p">Calculate the area and perimeter of a triangle.</p>
-            <input id="inputTriangle1" class="input" type="number" placeholder="Cuanto mide cada el lado izquierdo?">
-            <input id="inputTriangle2" class="input" type="number" placeholder="Cuanto mide cada el lado derecho?">
+            <p class="calculate-container__triangles--p p">Calculate the area and perimeter of a triangle.</p>
+            <input id="inputTriangle1" class="input" type="number" placeholder="Cuanto mide el lado izquierdo?">
+            <input id="inputTriangle2" class="input" type="number" placeholder="Cuanto mide el lado derecho?">
             <input id="inputTriangle3" class="input" type="number" placeholder="Cuanto mide la base del Triangulo?">
             <input id="inputTriangle4" class="input" type="number" placeholder="Cuanto mide la altura del Triangulo?">
             <div class="calculate-container__triangles--buttons">
@@ -50,7 +51,7 @@
         <section class="calculate-container__circles">
             <p id="displayCircle"></p>
             <div class="calculate-container__circles--img"></div>
-            <p class="calculate-container__circles--p">Calculate the area, diameter and circumference of a circle.</p>
+            <p class="calculate-container__circles--p p">Calculate the area, diameter and circumference of a circle.</p>
             <input id="inputCircles" class="input" type="number" placeholder="Cuanto mide el ratio de tu circulo?">
             <div class="calculate-container__circles--buttons">
                 <button class="button" onclick="calcularAreaCirculo()">Calculate area</button>

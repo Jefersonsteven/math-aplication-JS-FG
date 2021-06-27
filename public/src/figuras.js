@@ -9,7 +9,7 @@ function calcularPerimetroCuadrado() {
 
     const perimetro = perimetroCuadrado(value);
     const displaySquares = document.getElementById("displaySquares");
-    displaySquares.textContent = perimetro;
+    displaySquares.textContent = `${perimetro}cm`;
 }
 
 function calcularAreaCuadrado() {
@@ -18,7 +18,7 @@ function calcularAreaCuadrado() {
 
     const area = areaCuadrado(value);
     const displaySquares = document.getElementById("displaySquares");
-    displaySquares.textContent = area;
+    displaySquares.textContent = `${area}cm2`;
 }
 
 //Codigo del triangulo

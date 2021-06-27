@@ -6,11 +6,61 @@
     <meta name="description" content="Esta es mi app de calcular figuras geometricas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/dist/normalize.css">
     <link rel="stylesheet" href="./public/styles/dist/style.css">
-    <title>Figuras Geometricas</title>
+    <title>Geometrics Figures</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+
+    <header>
+        <div class="heaer-container__logo"></div>
+        <h1  class="heaer-container__title">Geometric Figures</h1>
+    </header>
+
+    <div class="calculate-container">
+
+        <section class="calculate-container__squares">
+            <div class="calculate-container__squares--img"></div>
+            <p id="displaySquares"></p>
+            <p class="calculate-container__squares--p">Calculate the area and perimeter of a square.</p>
+            <input id="inputSquares" class="input" type="number" placeholder="Cuanto mide cada lado de tu cuadrado?">
+            <div class="calculate-container__squares--buttons">
+                <button class="button" id="bCAC" type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
+                <button class="button" id="bCPC" type="button" onclick="calcularPerimetroCuadrado()">Calculate perimeter</button>
+            </div>
+        </section>
+
+        <section class="calculate-container__triangles">
+            <p id="displayTriangle"></p>
+            <div class="calculate-container__triangles--img"></div>
+            <p class="calculate-container__triangles--p">Calculate the area and perimeter of a triangle.</p>
+            <input id="inputTriangle1" class="input" type="number" placeholder="Cuanto mide cada el lado izquierdo?">
+            <input id="inputTriangle2" class="input" type="number" placeholder="Cuanto mide cada el lado derecho?">
+            <input id="inputTriangle3" class="input" type="number" placeholder="Cuanto mide la base del Triangulo?">
+            <input id="inputTriangle4" class="input" type="number" placeholder="Cuanto mide la altura del Triangulo?">
+            <div class="calculate-container__triangles--buttons">
+                <button class="button" onclick="calcularAreaTriangulo()">Calculate area</button>
+                <button class="button" onclick="calcularPerimetroTriangulo()">Calculate perimeter</button>
+            </div>
+        </section>
+
+        <section class="calculate-container__circles">
+            <p id="displayCircle"></p>
+            <div class="calculate-container__circles--img"></div>
+            <p class="calculate-container__circles--p">Calculate the area, diameter and circumference of a circle.</p>
+            <input id="inputCircles" class="input" type="number" placeholder="Cuanto mide el ratio de tu circulo?">
+            <div class="calculate-container__circles--buttons">
+                <button class="button" onclick="calcularAreaCirculo()">Calculate area</button>
+                <button class="button" onclick="calcularDiametroCirculo()">Calculate diameter</button>
+            </div>
+            <button class="button" onclick="calcularCircunferencia()">Calculate circumference</button>
+        </section>
+
+    </div>
+
     <script src="/public/src/figuras.js"></script>
 </body>
 </html>

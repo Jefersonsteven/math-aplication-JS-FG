@@ -1,44 +1,22 @@
 // Codigo del cuadrado
 
+let lado = parseInt(prompt("Cuanto mide un lado de el cuadrado?"));
+const perimetroCuadrado = lado => lado * 4;
+const areaCuadrado = lado => lado * lado;
 
-function perimetroCuadrado (lado) {
-    return lado * 4
-}
+//Codigo del triangulo
 
-function areaCuadrado (lado) {
-    return lado * lado
-}
-
-// Codigo del triangulo
-
-console.group("Triangulos");
-const lado1Triangulo = 6;
-const lado2Triangulo = 6;
-const baseTriangulo = 4;
-const alturaTriangulo = 5.5;
-console.log(`El lado lateral 1 del triangulo mide: ${lado1Triangulo}cm`);
-console.log(`El lado lateral 2 del triangulo mide: ${lado2Triangulo}cm`);
-console.log(`La base del triangulo mide: ${baseTriangulo}cm`);
-console.log(`La altura del triangulo mide: ${alturaTriangulo}cm`);
-
-const perimetroTriangulo = lado1Triangulo + lado2Triangulo + baseTriangulo;
-console.log(`El perimetro del triangulo mide: ${perimetroTriangulo}cm`);
-
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-console.log(`El area del triangulo mide: ${areaTriangulo}cm`);
-console.groupEnd();
+let lado1Triangulo = parseInt(prompt("Cuanto mide el lado izquierdo del triangulo?"));
+let lado2Triangulo = parseInt(prompt("Cuanto mide el lado derecho del triangulo?"));
+let baseTriangulo = parseInt(prompt("Cuanto mide la base del triangulo?"));
+let alturaTriangulo = parseInt(prompt("De cuanto es la altura del triangulo?"));
+const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base;
+const areaTriangulo = (base, altura) => (base * altura) / 2;
 
 // Codigo del circulo
 
-console.group("Circulos");
-const radioCirculo = 5;
+let radioCirculo = parseInt(prompt("Cuanto es el ratio del circulo?"));
 const PI = Math.PI;
-console.log(`El radio del circulo mide: ${radioCirculo}cm`);
-console.log(`PI es: ${PI}`);
-const diametroCirculo = radioCirculo * 2;
-const areaCirculo = (radioCirculo * radioCirculo) * PI;
-const circunferencia = diametroCirculo * PI
-console.log(`El diametro del circulo mide: ${diametroCirculo}cm`);
-console.log(`El area del circulo mide: ${areaCirculo}cm2`);
-console.log(`La circunferencia del circulo mide: ${circunferencia}cm`);
-console.groupEnd();
+const diametroCirculo = (radio) => radio * 2;
+const areaCirculo = (radio, pi) => (radio * radio) *pi;
+const circunferencia = (diametro, pi) => diametro * pi

@@ -1,6 +1,6 @@
-.calculate-container__squares {
+.calculate-container__triangles {
     width: 320px;
-    height: 468px;
+    height: 628px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
         width: 177px;
         height: 218px;
         margin-top: 20px;
-        background-image: url(/public/assets/Img/square.svg);
+        background-image: url(/public/assets/Img/triangle.svg);
         @include ajustarImagen;
     }
     &--img p {

@@ -36,7 +36,7 @@ function calcularPerimetroTriangulo() {
 
     const perimetro = perimetroTriangulo(value1, value2, value3);
     const displayTriangle = document.getElementById("displayTriangle");
-    displayTriangle.textContent = perimetro;
+    displayTriangle.textContent = `${perimetro}cm`;
 }
 
 function calcularAreaTriangulo() {
@@ -47,7 +47,7 @@ function calcularAreaTriangulo() {
 
     const area = areaTriangulo(value3, value4);
     const displayTriangle = document.getElementById("displayTriangle");
-    displayTriangle.textContent = area;
+    displayTriangle.textContent = `${area}cm`;
 }
 
 
@@ -64,7 +64,7 @@ function calcularAreaCirculo() {
 
     const area = areaCirculo(value, PI);
     const displayCircle = document.getElementById("displayCircle");
-    displayCircle.textContent = area;
+    displayCircle.textContent = `${area}cm`;
 }
 
 function calcularDiametroCirculo() {
@@ -73,7 +73,7 @@ function calcularDiametroCirculo() {
 
     const diametro = diametroCirculo(value);
     const displayCircle = document.getElementById("displayCircle");
-    displayCircle.textContent = diametro;
+    displayCircle.textContent = `${diametro}cm2`;
 }
 
 function calcularCircunferencia() {
@@ -83,5 +83,5 @@ function calcularCircunferencia() {
     const diametro = diametroCirculo(value);
     const circunferenciaCirculo = circunferencia(diametro, PI);
     const displayCircle = document.getElementById("displayCircle");
-    displayCircle.textContent = circunferenciaCirculo;
+    displayCircle.textContent = `${circunferenciaCirculo}cm`;
 }

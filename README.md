@@ -1,4 +1,4 @@
-# math-aplication-JS
+# FIGURAS GEOMETRICAS
 
 ...
 

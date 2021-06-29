@@ -25,6 +25,7 @@ function calcularAreaCuadrado() {
 
 const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base;
 const areaTriangulo = (base, altura) => (base * altura) / 2;
+const alturaTriangulo = (lado1, lado2, base) => Math.sqrt(lado1 ** 2 - ((base ** 2) / 4 ));
 
 function calcularPerimetroTriangulo() {
     const input1 = document.getElementById("inputTriangle1");
@@ -50,6 +51,20 @@ function calcularAreaTriangulo() {
     displayTriangle.textContent = `${area}cm`;
 }
 
+function calcularAlturaTriangulo () {
+    const input1 = document.getElementById("inputTriangle1");
+    const input2 = document.getElementById("inputTriangle2");
+    const input3 = document.getElementById("inputTriangle3");
+    const value1 = parseInt(input1.value);
+    const value2 = parseInt(input2.value);
+    const value3 = parseInt(input3.value);
+
+    if (value1 == value2 && value3 == value1) {
+    const altura = alturaTriangulo(value1, value2, value3);
+    const displayTriangle = document.getElementById("displayTriangle");
+    displayTriangle.textContent = `H: ${altura}cm`;
+    }
+}
 
 // Codigo del circulo
 

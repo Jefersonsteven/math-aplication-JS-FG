@@ -63,6 +63,9 @@ function calcularAlturaTriangulo () {
     const altura = alturaTriangulo(value1, value2, value3);
     const displayTriangle = document.getElementById("displayTriangle");
     displayTriangle.textContent = `H: ${altura}cm`;
+    } else {
+        const displayTriangle = document.getElementById("displayTriangle");
+        displayTriangle.textContent = `Los lados y la base no son iguales`;
     }
 }
 

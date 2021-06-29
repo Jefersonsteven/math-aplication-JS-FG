@@ -58,7 +58,7 @@ input {
   width: 40px;
   height: 40px;
   margin: 10px 0 10px 0;
-  background-image: url(/public/assets/Img/logo.png);
+  background-image: url(https://raw.githubusercontent.com/Jefersonsteven/math-aplication-JS-FG/main/public/assets/Img/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +79,7 @@ input {
   width: 177px;
   height: 218px;
   margin-top: 20px;
-  background-image: url(/public/assets/Img/square.svg);
+  background-image: url(https://raw.githubusercontent.com/Jefersonsteven/math-aplication-JS-FG/17fd2ba4913b370cb5691ff4892b8f9fd4b12e09/public/assets/Img/square.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,7 +110,7 @@ input {
   width: 177px;
   height: 218px;
   margin-top: 20px;
-  background-image: url(/public/assets/Img/triangle.svg);
+  background-image: url(https://raw.githubusercontent.com/Jefersonsteven/math-aplication-JS-FG/17fd2ba4913b370cb5691ff4892b8f9fd4b12e09/public/assets/Img/triangle.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -141,7 +141,7 @@ input {
   width: 177px;
   height: 218px;
   margin-top: 20px;
-  background-image: url(/public/assets/Img/circle.png);
+  background-image: url(https://raw.githubusercontent.com/Jefersonsteven/math-aplication-JS-FG/main/public/assets/Img/circle.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

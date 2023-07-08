@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/styles/dist/normalize.css">
-    <link rel="stylesheet" href="public/styles/dist/style.css">
-    <link rel="stylessheet" href="public/styles/dist/table-and-desktop.css" media="(min-width:1120px)">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylessheet" href="table-and-desktop.css" media="(min-width:1120px)">
     <title>Geometrics Figures</title>
     <style>
-        @media(min-width: 1120px){
+        @media(min-width: 1120px) {
             .calculate-container {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header class="header-container">
         <div class="header-container__logo"></div>
-        <h1  class="header-container__title">Geometric Figures</h1>
+        <h1 class="header-container__title">Geometric Figures</h1>
     </header>
 
     <div class="calculate-container">
@@ -42,7 +44,8 @@
             <input id="inputSquares" class="input" type="number" placeholder="Cuanto mide cada lado de tu cuadrado?">
             <div class="calculate-container__squares--buttons">
                 <button class="button" id="bCAC" type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
-                <button class="button" id="bCPC" type="button" onclick="calcularPerimetroCuadrado()">Calculate perimeter</button>
+                <button class="button" id="bCPC" type="button" onclick="calcularPerimetroCuadrado()">Calculate
+                    perimeter</button>
             </div>
         </section>
 
@@ -77,6 +80,7 @@
 
     </div>
 
-    <script src="public/src/figuras.js"></script>
+    <script src="figuras.js"></script>
 </body>
+
 </html>
